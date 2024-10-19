@@ -1,3 +1,5 @@
+---
+
 # Smart Factory Analytics
 
 ## Overview
@@ -107,3 +109,10 @@ To manage environment-specific settings, such as the database URL, you can use a
 
 ## Conclusion
 This project combines the power of **Vue.js** and **Flask** to create a robust platform for smart factory analytics. With a database for data storage, the platform can handle real-time monitoring, efficient task management, and dynamic visualizations if we fully finished it.
+
+## Project Members (TEAM SOA)
+- [Rayan Derradji](https://github.com/Rennsen)
+- [Yacine Arhab](https://github.com/Yacinearr)
+- [Abdelmalek Mohamed Said Drif](https://github.com/Abdouking163)
+
+---
