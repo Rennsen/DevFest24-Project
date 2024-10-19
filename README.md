@@ -1,5 +1,3 @@
----
-
 # Smart Factory Analytics
 
 ## Overview
