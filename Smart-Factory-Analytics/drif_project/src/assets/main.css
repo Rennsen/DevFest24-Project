@@ -1,0 +1,356 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+.your-element {
+  overflow-y: scroll; /* Or overflow: auto; if you want both directions */
+  scrollbar-width: thin; /* For Firefox, makes the scrollbar thin */
+  scrollbar-color: var(--bs-secondary) transparent; /* For Firefox, scroll thumb and track colors */
+}
+
+/* For WebKit-based browsers (Chrome, Safari, and newer versions of Edge) */
+*::-webkit-scrollbar {
+  width: 3px; /* Make the scrollbar thinner */
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* Scrollbar track (background) */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--bs-secondary); /* Scrollbar thumb (the part you drag) */
+  border-radius: 12px; /* Increase border-radius for more rounded corners */
+}
+
+/* Optional: Hover effect */
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #6c757d; /* Darker shade of secondary on hover */
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Cairo";
+}
+
+input,
+textarea {
+  outline: none;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.resize-none {
+  resize: none;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myContainer {
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .myContainer {
+    width: 95%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .myContainer {
+    width: 85%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .myContainer {
+    width: 75%;
+  }
+}
+@media (min-width: 1200px) {
+  .myContainer {
+    width: 65%;
+  }
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.col-1 {
+  grid-column: span 1;
+}
+
+.col-2 {
+  grid-column: span 2;
+}
+
+.col-3 {
+  grid-column: span 3;
+}
+
+.col-4 {
+  grid-column: span 4;
+}
+
+.col-5 {
+  grid-column: span 5;
+}
+
+.col-6 {
+  grid-column: span 6;
+}
+
+.col-7 {
+  grid-column: span 7;
+}
+
+.col-8 {
+  grid-column: span 8;
+}
+
+.col-9 {
+  grid-column: span 9;
+}
+
+.col-10 {
+  grid-column: span 10;
+}
+
+.col-11 {
+  grid-column: span 11;
+}
+
+.col-12 {
+  grid-column: span 12;
+}
+
+@media (min-width: 768px) {
+  .md-col-1 {
+    grid-column: span 1;
+  }
+  .md-col-2 {
+    grid-column: span 2;
+  }
+  .md-col-3 {
+    grid-column: span 3;
+  }
+  .md-col-4 {
+    grid-column: span 4;
+  }
+  .md-col-5 {
+    grid-column: span 5;
+  }
+  .md-col-6 {
+    grid-column: span 6;
+  }
+  .md-col-7 {
+    grid-column: span 7;
+  }
+  .md-col-8 {
+    grid-column: span 8;
+  }
+  .md-col-9 {
+    grid-column: span 9;
+  }
+  .md-col-10 {
+    grid-column: span 10;
+  }
+  .md-col-11 {
+    grid-column: span 11;
+  }
+  .md-col-12 {
+    grid-column: span 12;
+  }
+}
+@media (min-width: 1024px) {
+  .lg-col-1 {
+    grid-column: span 1;
+  }
+  .lg-col-2 {
+    grid-column: span 2;
+  }
+  .lg-col-3 {
+    grid-column: span 3;
+  }
+  .lg-col-4 {
+    grid-column: span 4;
+  }
+  .lg-col-5 {
+    grid-column: span 5;
+  }
+  .lg-col-6 {
+    grid-column: span 6;
+  }
+  .lg-col-7 {
+    grid-column: span 7;
+  }
+  .lg-col-8 {
+    grid-column: span 8;
+  }
+  .lg-col-9 {
+    grid-column: span 9;
+  }
+  .lg-col-10 {
+    grid-column: span 10;
+  }
+  .lg-col-11 {
+    grid-column: span 11;
+  }
+  .lg-col-12 {
+    grid-column: span 12;
+  }
+}
+.button, .button-red, .button-blue, .button-black {
+  padding: 7px 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
+}
+
+.button:hover, .button-red:hover, .button-blue:hover, .button-black:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  color: white;
+}
+
+.button:active, .button-red:active, .button-blue:active, .button-black:active {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transform: translateY(1px);
+  color: white;
+}
+
+.button-black {
+  background-color: black;
+  color: white;
+}
+
+.button-blue {
+  background-color: #0073EE;
+  color: white;
+}
+
+.button-red {
+  background-color: #FD0928;
+  color: white;
+}
+
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.bg-black {
+  background-color: #070B0C;
+}
+
+.c-yellow {
+  color: #D8FA2C;
+}
+.c-yellow:hover {
+  color: #44D601;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
+@media (max-height: 900px) {
+  .overflow {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+}
+
+/* endAddition */
+.section-title {
+  font-size: 2.4rem;
+  padding-bottom: 15px;
+  margin: 0 0 15px 10px;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-title::before {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 3px;
+  background-color: white;
+  bottom: 0;
+  right: 0;
+}
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  background-color: black;
+  height: 3px;
+}
+@media (max-width: 567px) {
+  .section-title {
+    font-size: 2.1rem;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.bg-light-danger {
+  background-color: #f5c2c7;
+}
+
+.bg-hard-night {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bg-night {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.shape {
+  border-bottom-right-radius: 30%;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.border-none {
+  border: none;
+}/*# sourceMappingURL=main.css.map */
